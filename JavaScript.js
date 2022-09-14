@@ -120,6 +120,7 @@ let averageAge2 = (ageShorno + ageDhonno) / 2;//output 26
 console.log(averageAge2);
 */
 
+
 //coding challenge #1
 /*question:
 Mark and John are trying to compare their BMI (Body Mass Index), which is
@@ -138,6 +139,8 @@ m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 m tall.
 */
+//answer
+/*
 
 let markWeight, markHeight, markBMI, johnWeight, johnHeight, johnBMI;
 markWeight = 78;
@@ -166,3 +169,33 @@ console.log(johnBMI);
 let markHigherBMI2 = markBMI > johnBMI;
 console.log(markHigherBMI2);
 
+*/
+
+//string & Template Literals:
+
+const firstName = 'shorno';
+const job = 'programmer';
+const birthYear = 1995;
+const year = 2020;
+
+//with string:
+
+const shorno = "I'm " + firstName + ", a " + (year - birthYear) + "  years old " + job + '!'
+console.log(shorno);
+
+//with TL:
+
+const shornoNew = `I'm ${firstName}, a ${year - birthYear} years old ${job} !`;
+console.log(shornoNew);
+
+//multiple lines with string:
+
+console.log('string with \n\
+multiple \n\
+lines');
+
+//multiple lines with Tl:
+
+console.log(`string with
+multiple
+lines`);
