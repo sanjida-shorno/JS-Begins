@@ -170,6 +170,7 @@ let markHigherBMI2 = markBMI > johnBMI;
 console.log(markHigherBMI2);
 
 */
+/*
 
 //string & Template Literals:
 
@@ -199,3 +200,32 @@ lines');
 console.log(`string with
 multiple
 lines`);
+*/
+
+//if-else statement
+let age = 19;
+const isOldEnough = age >= 18;
+
+/*if (isOldEnough) {
+    console.log(`one can get driving license`);
+}*/
+
+age = 16
+if (age >= 18) {
+    console.log(`one can get driving license`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`too young.wait another ${yearsLeft} years`);
+}
+
+
+
+const birthYear = 1995;
+
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
