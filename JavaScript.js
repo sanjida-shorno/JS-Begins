@@ -289,7 +289,7 @@ if (markHigherBMI2) {
 */
 
 //type conversion
-const inputYear = '1995';
+/*const inputYear = '1995';
 console.log(inputYear + 25);
 console.log(Number(inputYear) + 25);
 
@@ -308,6 +308,41 @@ console.log('25' > 15);
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+*/
+
+
+//truthy and falsy values
+//five falsy values are: 0, '', undefined, null, NaN
+//besides all are truthy values 
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('shorno'));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+let money = 0;
+if (money) {
+    console.log("i have money");
+} else {
+    console.log('no money');
+}
+
+let manyMoney = 100;
+if (manyMoney) {
+    console.log("i have money");
+} else {
+    console.log('no money');
+}
+
+let height;
+if (height) {
+    console.log("height is defined");
+} else {
+    console.log('height is not defined');
+}
+
 
 
 
