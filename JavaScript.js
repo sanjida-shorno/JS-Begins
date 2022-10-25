@@ -244,6 +244,8 @@ BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement 😉
 */
 
+//solution;
+/*
 let markWeight, markHeight, markBMI1, markBMI2, johnWeight, johnHeight, johnBMI1, johnBMI2;
 markWeight = 78;
 markHeight = 1.69;
@@ -273,17 +275,43 @@ console.log(markHigherBMI2);
 
 
 if (markHigherBMI1) {
-    console.log("Mark's BMI is higher than John's!");
+    console.log(`Mark's BMI ${markBMI1} is higher than John's ${johnBMI1}!`);
 } else {
-    console.log("John's BMI is higher than Mark's!");
+    console.log(`John's ${johnBMI1} BMI is higher than Mark's ${markBMI1}!`);
 }
 
 if (markHigherBMI2) {
-    console.log("Mark's BMI is higher than John's!");
+    console.log(`Mark's BMI ${markBMI1} is higher than John's ${johnBMI1}!`);
 } else {
-    console.log("John's BMI is higher than Mark's!");
+    console.log(`John's BMI ${johnBMI1} is higher than Mark's ${markBMI1}!`);
 }
 
-console.log(`Mark's BMI ${markBMI1} is higher than John's ${johnBMI1}!`);
+*/
 
-console.log(`john's BMI ${johnBMI2} is higher than mark's ${markBMI2}!`);
+//type conversion
+const inputYear = '1995';
+console.log(inputYear + 25);
+console.log(Number(inputYear) + 25);
+
+console.log(Number('shorno'));
+console.log(typeof NaN);
+console.log(String(25) + 25);
+
+//type coercion
+
+console.log('I am ' + 25 + ' years old.');
+console.log('25' - '10' - 3);
+console.log('25' + '10' + 3);
+console.log('25' * '2');
+console.log('25' > 15);
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+
+
+
+
+
+
