@@ -315,7 +315,7 @@ console.log(n);
 //five falsy values are: 0, '', undefined, null, NaN
 //besides all are truthy values 
 
-
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('shorno'));
@@ -343,6 +343,48 @@ if (height) {
     console.log('height is not defined');
 }
 
+*/
+//equal and different operator
+
+const age = 18;
+
+if (age === 18) console.log("I am adult");
+
+if (age === 17) console.log("I am not adult");
+
+const age2 = '18';
+
+if (age2 === 18) console.log("I am adult2 (strict)");//'18'=string,18=number
+
+if (age2 == 18) console.log("I am adult2 (loose0)");
+
+prompt("what is your favourite number?");
+
+const favourite = prompt("what is your favourite number? i will store it.")
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) console.log('cool!23 (loose)');
+if (favourite === 23) console.log('cool!23(strict)');
+
+
+const favourite2 = Number(prompt("what is your favourite number2? i will store it."))
+console.log(favourite2);
+console.log(typeof favourite2);
+
+if (favourite2 === 25) {
+    console.log('cool!25');
+} else if (favourite2 === 5) {
+    console.log('cool!5');
+} else if (favourite2 === 3) {
+    console.log('cool!3');
+} else {
+    console.log('not 25 or 5 or 3');
+}
+
+if (favourite2 !== 25) {
+    console.log('why not 25? ');
+}
 
 
 
