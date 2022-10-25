@@ -346,6 +346,7 @@ if (height) {
 */
 //equal and different operator
 
+/*
 const age = 18;
 
 if (age === 18) console.log("I am adult");
@@ -385,7 +386,30 @@ if (favourite2 === 25) {
 if (favourite2 !== 25) {
     console.log('why not 25? ');
 }
+*/
 
+//logical operators
+
+const A = true;
+const B = false;
+
+console.log(A && B); // && = AND operator
+console.log(A || B); // || = OR operator
+console.log(!B); // ! = NOT operator
+
+if (A && B) {
+    console.log(`hi...`);
+} else {
+    console.log(`bye..`);
+}
+
+const C = true;
+
+if (A && !B && C) {
+    console.log(`hello....`);
+} else {
+    console.log(`goodbye..`);
+}
 
 
 
