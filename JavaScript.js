@@ -432,6 +432,7 @@ Test data:
 § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
+/*
 
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
@@ -478,7 +479,53 @@ if (scoreDolphins2 > scoreKoalas2 && scoreDolphins2 >= 100) {
     console.log("no one win");
 }
 
+*/
 
+//if-else and switch case
+
+
+const day = 'wednesday';
+
+if (day == 'monday') {
+    console.log('we will play');
+} else if (day == 'tuesday') {
+    console.log('we will sing');
+} else if (day == 'wednesday' || day == 'thursday') {
+    console.log('we will read');
+} else if (day == 'friday') {
+    console.log('we will write');
+} else if (day == 'saturday' || day == 'sunday') {
+    console.log('we will dance');
+} else {
+    console.log('not a valid day');
+}
+
+
+//switch case
+const day2 = 'monday';
+
+switch (day2) {
+    case 'monday':
+        console.log('we will play');
+        break;
+    case 'tuesday':
+        console.log('we will sing');
+        break;
+
+    case 'wednesday':
+    case 'thursday':
+        console.log('we will read');
+        break;
+    case 'friday':
+        console.log('we will write');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('we will dance');
+        break;
+    default:
+        console.log('not a valid day');
+}
 
 
 
