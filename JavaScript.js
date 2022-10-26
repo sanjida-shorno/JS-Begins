@@ -482,7 +482,7 @@ if (scoreDolphins2 > scoreKoalas2 && scoreDolphins2 >= 100) {
 */
 
 //if-else and switch case
-
+/*
 
 const day = 'wednesday';
 
@@ -527,7 +527,40 @@ switch (day2) {
         console.log('not a valid day');
 }
 
+*/
 
+//ternary operator
+
+let age = 29;
+age >= 18 ? console.log('I like to drink coffee') :
+    console.log("I like to drink water");
+
+//the above code can be written as below:
+console.log(age >= 20 ? 'coffee' : 'water');
+
+//in if-else:
+if (age >= 18) {
+    console.log('coffee1');
+} else {
+    console.log('water1');
+}
+
+
+//we can store this value in a variable
+
+const drink = age >= 20 ? 'coffee2' : 'water2'
+console.log(drink);
+
+//in if-else:
+
+let drink2;
+if (age >= 30) {
+    drink2 = 'coffee3';
+} else {
+    drink2 = 'water3';
+} console.log(drink2);
+
+console.log(`I like to drink ${age >= 38 ? 'coffee' : 'water'}`);
 
 
 
