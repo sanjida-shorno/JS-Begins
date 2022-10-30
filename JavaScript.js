@@ -585,13 +585,6 @@ Hints:
 § Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 */
-
-
-const bill = 275;
-
-const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
-console.log(tip);
-
 /*
 if (billValue >= 50 && billValue <= 300) {
     tip = billValue * .15;
@@ -599,4 +592,17 @@ if (billValue >= 50 && billValue <= 300) {
     tip = billValue * .20;
 } console.log(tip);
 */
+
+/*
+const bill = 275;
+
+const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+console.log(tip);
+
+
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+*/
+
+//practice:
+
+document.getElementById("demo").innerHTML = 10 + 20;
