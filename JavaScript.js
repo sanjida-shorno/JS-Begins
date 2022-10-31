@@ -605,4 +605,10 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 
 //practice:
 
-document.getElementById("demo").innerHTML = 10 + 20;
+console.log(typeof true);
+console.log(typeof "shorno");
+console.log(typeof 27);
+
+document.getElementById("demo1").innerHTML = 4 + 5;//will not give output because the last demo1 will be executed last and will be loaded
+document.getElementById("demo1").innerHTML = 10 + 20;//will give output 
+document.getElementById("demo2").innerHTML = 100 + 500;//it will also give output because it is demo2
