@@ -272,6 +272,7 @@ checkWinner(scoreDolphins, scoreKoalas);
 */
 
 //array
+/*
 //creating array:
 
 const friends = ['saiful', 'strela', 'Ivy'];
@@ -320,3 +321,45 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+//array methods
+
+const friends = ['saiful', 'strela', 'Ivy', 'erom'];
+console.log(friends);
+
+//adding methods:
+
+friends.push('jolly');//add last
+console.log(friends);
+
+const pushed = friends.push('happy');//add last
+console.log(pushed);
+
+friends.unshift('mou');//add first
+console.log(friends);
+
+//removing methods:
+
+friends.pop('jolly');//remove last
+console.log(friends);
+
+friends.shift('mou');//remove first
+console.log(friends);
+
+//positioning methods:
+
+
+console.log(friends.indexOf('strela'));
+
+
+console.log(friends.indexOf('bob'));
+
+//boolean method
+console.log(friends.includes('strela'));
+
+
+console.log(friends.includes('bob'));
+
+if (friends.includes('strela')) {
+    console.log('strela yah');
+}
