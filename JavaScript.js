@@ -59,6 +59,7 @@ const calcAge3 = function (bithYear) {
 
 //arrow funtion 
 //for one parameter and one line of code
+/*
 
 const calcAge4 = birthYear => 2022 - birthYear;
 console.log(calcAge4(1995));
@@ -105,5 +106,81 @@ console.log(ageUntilRetirement1(1995, 'shorno'));
 
 const yearsLeft1 = ageUntilRetirement1(1997, 'dhonno');
 console.log(yearsLeft1);
+*/
 
+
+
+
+'use strict'
+//function calling unsing function expression
+
+const cutFruitPieces = function (fruit) {
+    return fruit * 4;
+}
+
+const fruitProcessor = function (banana, apple) {
+    const bananaPieces = cutFruitPieces(banana);
+    const applePieces = cutFruitPieces(apple);
+
+    const juice = `juice with ${bananaPieces} banana pieces & ${applePieces} apple pieces`;
+    return juice;
+
+}
+
+console.log(fruitProcessor(2, 3));
+
+//storing result in a variable
+
+const drinkJuice = fruitProcessor(5, 4);
+console.log(drinkJuice);
+
+
+
+
+//function calling unsing function declaration
+
+function cutFruitPieces2(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor2(orange, grape) {
+    const orangePieces = cutFruitPieces2(orange);
+    const grapePieces = cutFruitPieces2(grape);
+
+    const juice2 = `juice with ${orangePieces} orange pieces & ${grapePieces} grape pieces`;
+    return juice2;
+
+}
+
+console.log(fruitProcessor2(20, 30));
+
+//storing result in a variable
+
+const drinkJuice2 = fruitProcessor2(50, 40);
+console.log(drinkJuice2);
+
+
+
+
+//function calling unsing arrow function 
+
+const cutFruitPieces3 = fruit => fruit * 4;
+
+
+const fruitProcessor3 = (banana3, apple3) => {
+    const bananaPieces3 = cutFruitPieces3(banana3);
+    const applePieces3 = cutFruitPieces3(apple3);
+
+
+    const juice3 = `juice with ${bananaPieces3} banana3 pieces & ${applePieces3} apple3 pieces`;
+    return juice3;
+
+}
+
+console.log(fruitProcessor3(2, 3));
+
+//storing result in a variable
+
+const drinkJuice3 = fruitProcessor3(5, 4);
+console.log(drinkJuice3);
 
