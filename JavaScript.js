@@ -113,7 +113,7 @@ console.log(yearsLeft1);
 
 'use strict'
 //function calling unsing function expression
-
+/*
 const cutFruitPieces = function (fruit) {
     return fruit * 4;
 }
@@ -183,4 +183,30 @@ console.log(fruitProcessor3(2, 3));
 
 const drinkJuice3 = fruitProcessor3(5, 4);
 console.log(drinkJuice3);
+*/
 
+
+//function review
+
+
+const calcAge = function (birthyear) {
+    return 2022 - birthyear;
+
+}
+
+const yearsUntilretirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear)
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} already retired`)
+        return -1;
+    }
+
+}
+
+console.log(yearsUntilretirement(1995, 'shorno'));
+console.log(yearsUntilretirement(1950, 'dhonno'));
