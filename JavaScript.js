@@ -240,6 +240,7 @@ Hints:
 § To check if number A is at least double number B, check for A >= 2 * B.
 Apply this to the team's average scores 😉
 */
+/*
 
 const calcAverage = (value1, value2, value3) => (value1 + value2 + value3) / 3;
 
@@ -268,3 +269,54 @@ const scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+//array
+//creating array:
+
+const friends = ['saiful', 'strela', 'Ivy'];
+console.log(friends);
+
+//another way of crreating array:
+
+const friends2 = new Array('saiful', 'strela', 'Ivy')
+console.log(friends2)
+
+const years = new Array(1995, 1997, 2022)
+console.log(years)
+
+
+console.log(years[0]);
+
+console.log(years.length);
+console.log(years[years.length - 1]);//printing the last value of the array
+
+//replacing a value of friends array
+
+friends[1] = 'dhonno';
+console.log(friends);
+
+const firstName = 'shorno';
+const shorno = [firstName, 'dhonno', 2037 - 2022, 'teacher', friends];
+console.log(shorno);
+
+//using array elements into a function
+
+const calcAge = function (birthYear) {
+    return 2050 - birthYear;
+}
+
+console.log(calcAge(years[1]));
+
+//storing it in a variable:
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+//or we can do it by creating another array
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
