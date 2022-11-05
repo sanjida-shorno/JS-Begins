@@ -323,6 +323,7 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 */
 //array methods
+/*
 
 const friends = ['saiful', 'strela', 'Ivy', 'erom'];
 console.log(friends);
@@ -363,3 +364,38 @@ console.log(friends.includes('bob'));
 if (friends.includes('strela')) {
     console.log('strela yah');
 }
+*/
+
+//we can declare same variable name twice with var but can't do it with let or const
+var carName = "Volvo";
+var carName = "Honda";
+console.log(carName);
+
+let carName2 = "BMW";
+// let carName2 ="toyota"; //not allowed
+carName2 = "ferrari" // allowed without writing let
+console.log(carName2);
+
+const carName3 = "lexus";
+// const carName3="jeep"; //not allowed
+//carName3="marcedes" //not allowed
+console.log(carName3);
+
+let x = 2 + 3 + "5"; //55
+let y = "5" + 2 + 3; //523
+console.log(x, y)
+
+{
+    let x = 10;
+    console.log(x); //10
+
+}
+console.log(x); //55
+
+{
+    let x = 20;
+    console.log(x); //20
+
+}
+
+console.log(x); //55
