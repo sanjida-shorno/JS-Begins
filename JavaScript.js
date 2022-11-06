@@ -491,6 +491,7 @@ and his best friend is called ${shorno.friends[0]}`);
 
 //T.no44 object methods:
 'use strict'
+/*
 
 const shorno = {
     firstName: 'sanjida',
@@ -522,3 +523,65 @@ console.log(shorno['age']);
 console.log(shorno.getSummary());
 
 console.log(shorno);
+*/
+
+
+//T.no 45
+/*
+
+Coding Challenge #3
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
+implement the calculations! Remember: BMI = mass / height ** 2 = mass
+/ (height * height) (mass in kg and height in meter)
+Your tasks:
+1. For each of them, create an object with properties for their full name, mass, and
+height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same
+method on both objects). Store the BMI value to a property, and also return it
+from the method
+3. Log to the console who has the higher BMI, together with the full name and the
+respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+tall.
+*/
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        mark.BMI = mark.mass / mark.height ** 2;
+        return this.BMI;
+    }
+
+}
+
+const john = {
+    fullName: 'JOhn Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return john.BMI;
+    }
+
+
+}
+
+mark.calcBMI();// we must have to call the functin first before using it in the console
+console.log(`mark bmi is ${mark.calcBMI()}`); //24
+
+john.calcBMI();
+console.log(`john bmi is ${john.BMI}`); //27
+
+
+//console.log(mark.calcBMI >= john.calcBMI ? `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!` : `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s(${mark.calcBMI()})!`);
+
+if (mark.BMI > john.BMI) {
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
+} else {
+    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
+}
+
