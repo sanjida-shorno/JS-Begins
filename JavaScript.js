@@ -424,6 +424,7 @@ values (so don't store the tip values in separate variables first, but right in 
 array) 😉
 */
 
+/*
 function calcTip(bill) {
 
     return bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
@@ -437,3 +438,52 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 
 console.log(bills, tips, total);
+*/
+
+//T.no43:object
+
+const shorno = {
+    firstName: 'sanjida',
+    lastName: 'tasnim',
+    age: 2022 - 1995,
+    job: 'teacher',
+    friends: ['saiful', 'strela', 'ivy']
+}
+
+console.log(shorno);
+
+//property getting from the object using dot:
+
+console.log(shorno.age);//age is real property of shorno
+
+////property getting from the object using bracket notation:
+console.log(shorno['firstName']);
+
+const keyName = "Name"
+console.log(shorno['last' + keyName]);
+
+//example:
+
+const interestedIn = prompt('what do you want to know about shorno?')
+console.log(shorno.interestedIn);//interestedIn is not a real property of shorno
+
+console.log(shorno[interestedIn]);
+
+console.log(shorno.friends.length);//length is real property of shorno
+
+// if (shorno[interestedIn]) {
+//     console.log(`bio: ${shorno[interestedIn]}`);
+// } else {
+//     console.log(`wrong request!`);
+// }
+
+console.log(shorno[interestedIn] ? (`bio: ${shorno[interestedIn]}`) : `wrong request`);
+//adding properties in the object using both:
+
+shorno.location = 'Bangladesh';
+shorno['mail'] = 'shornohstu29@gmail.com';
+console.log(shorno);
+
+
+console.log(`${shorno.firstName} has ${shorno.friends.length} friends,
+and his best friend is called ${shorno.friends[0]}`);
