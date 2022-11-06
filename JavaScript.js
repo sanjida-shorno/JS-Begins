@@ -441,7 +441,7 @@ console.log(bills, tips, total);
 */
 
 //T.no43:object
-
+/*
 const shorno = {
     firstName: 'sanjida',
     lastName: 'tasnim',
@@ -487,3 +487,38 @@ console.log(shorno);
 
 console.log(`${shorno.firstName} has ${shorno.friends.length} friends,
 and his best friend is called ${shorno.friends[0]}`);
+*/
+
+//T.no44 object methods:
+'use strict'
+
+const shorno = {
+    firstName: 'sanjida',
+    lastName: 'tasnim',
+    birthYear: 1995,
+    job: 'teacher',
+    friends: ['saiful', 'strela', 'ivy'],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        //console.log(this);
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age}-years old ${this.job}, and has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+    }
+}
+
+console.log(shorno['calcAge']());
+console.log(shorno.calcAge());
+
+console.log(shorno);
+
+console.log(shorno.age);
+console.log(shorno['age']);
+
+console.log(shorno.getSummary());
+
+console.log(shorno);
