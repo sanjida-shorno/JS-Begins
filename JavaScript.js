@@ -595,7 +595,7 @@ for (let i = 1; i <= 10; i++) {
 */
 
 /////////////////////////////////////////T no.47 looping arrays,breaking and continuing
-
+/*
 const shorno = [
     'sanjida',
     'tasnim',
@@ -646,3 +646,32 @@ for (let i = 0; i < shorno.length; i++) {
     if (typeof shorno[i] === 'number') break;
     console.log(shorno[i]);
 }
+*/
+
+///////////////////////////////T no.48 looping backwards and loops in loops
+
+//looping backwards
+const shorno = [
+    'sanjida',
+    'tasnim',
+    2022 - 1995,
+    'teacher',
+    ['saiful', 'strela', 'Ivy'],
+    true
+
+];
+
+for (let i = shorno.length - 1; i >= 0; i--) {
+    console.log(i, shorno[i]);
+}
+
+//loops in loops
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----------------starting exercise ${exercise}`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: lifting the weight ${rep}`);
+    }
+}
+
