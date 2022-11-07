@@ -545,6 +545,7 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 tall.
 */
 
+/*
 const mark = {
     fullName: 'Mark Miller',
     mass: 78,
@@ -577,11 +578,17 @@ john.calcBMI();
 console.log(`john bmi is ${john.BMI}`); //27
 
 
-//console.log(mark.calcBMI >= john.calcBMI ? `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!` : `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s(${mark.calcBMI()})!`);
-
+``
 if (mark.BMI > john.BMI) {
     console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
 } else {
     console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`);
 }
 
+*/
+
+//T no.46 the for loop
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`lifting weight repetition ${i}`);
+}
