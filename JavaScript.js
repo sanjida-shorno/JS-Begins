@@ -587,8 +587,62 @@ if (mark.BMI > john.BMI) {
 
 */
 
-//T no.46 the for loop
-
+////////////////////////////////////////////T no.46 the for loop
+/*
 for (let i = 1; i <= 10; i++) {
     console.log(`lifting weight repetition ${i}`);
+}
+*/
+
+/////////////////////////////////////////T no.47 looping arrays,breaking and continuing
+
+const shorno = [
+    'sanjida',
+    'tasnim',
+    true,
+    2022 - 1995,
+    'teacher',
+    ['saiful', 'strela', 'Ivy'],
+
+];
+
+const types = [];
+const types1 = [];
+
+for (let i = 0; i < shorno.length; i++) {
+    //reading from shorno array
+    console.log(shorno[i], typeof shorno[i]);
+
+    //filling types array
+    types[i] = typeof shorno[i]
+    //we can also feel the types1 array using push method
+    types1.push(typeof shorno[i]);
+
+}
+console.log(types, types1)
+
+const years = [1995, 1997, 2000];
+const ages = [];
+const ages1 = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages[i] = 2022 - years[i];
+    ages1.push(2037 - years[i]);
+}
+console.log(ages);
+console.log(ages1);
+
+//continue statement:
+console.log('--ONLY STRINGS--')
+for (let i = 0; i < shorno.length; i++) {
+    if (typeof shorno[i] !== 'string') continue;
+    console.log(shorno[i]);
+}
+
+//break statement
+
+console.log('--BREAK WITH NUMBERS--')
+for (let i = 0; i < shorno.length; i++) {
+    if (typeof shorno[i] === 'number') break;
+    console.log(shorno[i]);
 }
