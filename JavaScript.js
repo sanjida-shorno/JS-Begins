@@ -649,7 +649,7 @@ for (let i = 0; i < shorno.length; i++) {
 */
 
 ///////////////////////////////T no.48 looping backwards and loops in loops
-
+/*
 //looping backwards
 const shorno = [
     'sanjida',
@@ -674,4 +674,26 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`Exercise ${exercise}: lifting the weight ${rep}`);
     }
 }
+*/
+
+///////////////////////////////////////T.no49 The while loop
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`-----lifting weight ${rep} kg-----`);
+    rep++;
+
+}
+
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(`beginning dice: ${dice}. If beginning dice is '6' then you can't play anymore means 'out', now play:`);
+
+while (dice !== 6) {
+    console.log(`You rolled dice ${dice}`);
+
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`it's '6' at the end of rolling so now pass the dice other players`);
+}
+
 
