@@ -1,4 +1,7 @@
-//function
+////////////////////////////////Folder no. 03 (JavaScript Fundamentals – Part 2)
+
+
+/////////////////////////////////////////T no.32 & 33
 'use strict';
 
 //function
@@ -13,9 +16,14 @@ function fruitProcessor(banana, apple) {
 console.log(fruitProcessor(10, 20));
 
 //using variable to store it
+
 const drink = fruitProcessor(5, 8);
 console.log(drink);
 */
+
+
+//////////////////////////////////////////T no.34
+//Function Declaration vs. Expressions
 /*
 //function declaration
 
@@ -57,9 +65,11 @@ const calcAge3 = function (bithYear) {
 }
 */
 
+////////////////////////////////////////////////T no.35
 //arrow funtion 
-//for one parameter and one line of code
 /*
+
+//for one parameter and one line of code
 
 const calcAge4 = birthYear => 2022 - birthYear;
 console.log(calcAge4(1995));
@@ -109,11 +119,11 @@ console.log(yearsLeft1);
 */
 
 
-
-
-'use strict'
-//function calling unsing function expression
+/////////////////////////////////////////////T no.36
+//Functions Calling Other Functions
 /*
+//function calling unsing function expression
+
 const cutFruitPieces = function (fruit) {
     return fruit * 4;
 }
@@ -185,8 +195,8 @@ const drinkJuice3 = fruitProcessor3(5, 4);
 console.log(drinkJuice3);
 */
 
-
-//function review
+///////////////////////////////////////////T no.37
+//reviewing Functions
 
 /*
 const calcAge = function (birthyear) {
@@ -212,7 +222,8 @@ console.log(yearsUntilretirement(1995, 'shorno'));
 console.log(yearsUntilretirement(1950, 'dhonno'));
 */
 
-//coding challenge #1(fundamentals part2)
+//////////////////////////////////////////////T no.38
+//coding challenge #1 (folder 3)
 /*
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new
 gymnastics discipline, which works differently.
@@ -271,7 +282,9 @@ console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
 
-//array
+
+////////////////////////////////////////T no.39
+//Introduction to arrays
 /*
 //creating array:
 
@@ -322,7 +335,9 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 */
-//array methods
+
+///////////////////////////////////////////////T no.40
+//Basic array Operations(Methods)
 /*
 
 const friends = ['saiful', 'strela', 'Ivy', 'erom'];
@@ -365,7 +380,7 @@ if (friends.includes('strela')) {
     console.log('strela yah');
 }
 */
-
+//////////////////////////////////////////////W3 schools
 //we can declare same variable name twice with var but can't do it with let or const
 /*
 var carName = "Volvo";
@@ -402,8 +417,9 @@ console.log(x); //55
 console.log(x); //55
 */
 
+//////////////////////////////////////////////T no.41
+//Coding Challenge #2
 /*
-Coding Challenge #2
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 the bill if the bill value is between 50 and 300, and if the value is different, the tip is
 20%.
@@ -440,7 +456,9 @@ const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
 console.log(bills, tips, total);
 */
 
-//T.no43:object
+
+//////////////////////////////////////T no.42 & 43
+//Introductions to Objects & Dot vs. Bracket Notation
 /*
 const shorno = {
     firstName: 'sanjida',
@@ -489,10 +507,9 @@ console.log(`${shorno.firstName} has ${shorno.friends.length} friends,
 and his best friend is called ${shorno.friends[0]}`);
 */
 
-//T.no44 object methods:
-'use strict'
+//////////////////////////////////////////T no.44
+//Object methods
 /*
-
 const shorno = {
     firstName: 'sanjida',
     lastName: 'tasnim',
@@ -526,10 +543,9 @@ console.log(shorno);
 */
 
 
-//T.no 45
+////////////////////////////////////////////////////T.no 45
+//Coding Challenge #3
 /*
-
-Coding Challenge #3
 Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
 implement the calculations! Remember: BMI = mass / height ** 2 = mass
 / (height * height) (mass in kg and height in meter)
@@ -578,7 +594,7 @@ john.calcBMI();
 console.log(`john bmi is ${john.BMI}`); //27
 
 
-``
+
 if (mark.BMI > john.BMI) {
     console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`);
 } else {
@@ -587,7 +603,8 @@ if (mark.BMI > john.BMI) {
 
 */
 
-////////////////////////////////////////////T no.46 the for loop
+////////////////////////////////////////////T no.46 
+//Iteration:The for loop
 /*
 for (let i = 1; i <= 10; i++) {
     console.log(`lifting weight repetition ${i}`);
@@ -677,7 +694,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
 */
 
 ///////////////////////////////////////T.no49 The while loop
-
+/*
 let rep = 1;
 while (rep <= 10) {
     console.log(`-----lifting weight ${rep} kg-----`);
@@ -697,3 +714,93 @@ while (dice !== 6) {
 }
 
 
+*/
+
+//////////////////////////////////////T no50 coding challenge #4
+
+/*
+Coding Challenge #4
+Let's improve Steven's tip calculator even more, this time using loops!
+Your tasks:
+1. Create an array 'bills' containing all 10 test bill values
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate
+tips and total values (bill + tip) for every bill value in the bills array. Use a for
+loop to perform the 10 calculations!
+Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
+tips and totals arrays 😉
+*/
+
+
+//using for loop outside the function:
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+
+
+const calcTip = function (value) {
+    value = value >= 50 && value <= 300 ? value * (15 / 100) : value * (20 / 100);
+    return value;
+
+    //we can also use if-else instead of ternary operator:
+
+    /*
+     if (value >= 50 && value <= 300) {
+         return value * (15 / 100);
+     } else {
+         return value * (20 / 100);
+     }
+    */
+}
+
+
+
+for (let i = 0; i < 10; i++) {
+
+    tips[i] = calcTip(bills[i]);      //or, tips.push(calcTip(bills[i]))
+    total.push(bills[i] + tips[i]);   //or, total[i] = (bills[i] + tips[i])
+}
+
+console.log(`using for loop outside the function:`);
+
+console.log(bills, tips, total);
+
+
+//we can also use for loop inside the function to solve the challenge
+
+const bills1 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips1 = [];
+const total1 = [];
+
+const calcTip1 = function () {
+    for (let i = 0; i < 10; i++) {
+
+
+        tips1[i] = bills1[i] >= 50 && bills1[i] <= 300 ? bills1[i] * (15 / 100) : bills1[i] * (20 / 100);//or,  tips1.push(bills1[i] >= 50 && bills1[i] <= 300 ? bills1[i] * (15 / 100) : bills1[i] * (20 / 100));
+
+
+        //we can also use if-else instead of ternary operator:
+
+        /*
+         if (bills1[i] >= 50 && bills1[i] <= 300) {
+             tips1.push(bills[i] * (15 / 100));  //or,  tips1[i] = bills1[i] * (15 / 100); 
+         } else {
+             tips1[i] = bills1[i] * (20 / 100);  //or,  tips1.push(bills1[i] * (20 / 100));
+         }
+        */
+
+
+        total1[i] = (bills1[i] + tips1[i]);  //or,  total1.push(bills1[i] + tips1[i]); 
+    }
+}
+
+
+
+
+calcTip1()
+
+console.log(`using for loop inside the function:`);
+
+console.log(bills1, tips1, total1);
